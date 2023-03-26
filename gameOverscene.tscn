@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmct5cs6mg62v"]
+
+[ext_resource type="Script" path="res://gameOverscene.gd" id="1_s474a"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_s474a")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_right = -0.1521
+offset_bottom = -2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.997
+anchor_bottom = 0.084
+offset_left = 183.0
+offset_top = 133.0
+offset_right = -163.541
+offset_bottom = 467.736
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "RESTART GAME"
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "EXIT
+"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
