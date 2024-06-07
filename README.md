@@ -1,1 +1,2 @@
-"# Coin-search-warrior-Game" 
+# เริ่มต้นสร้างเกมด้วย GODOT 
+พัฒนาเกมด้วยโปรแกรม GODOT 
